@@ -1,33 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Title  from './title.tsx'
+import Intro from './intro.tsx'
+import Hobby1 from './hobby 1/hobby1.tsx'
+import List1 from './hobby 1/list1.tsx'
+import Table1 from './hobby 1/table1.tsx'
+import Form1 from './hobby 1/form1.tsx'
+import Hobby2 from './hobby 2/hobby2.tsx'
+import List2 from './hobby 2/list2.tsx'
+import Table2 from './hobby 2/table2.tsx'
+import Form2 from './hobby 2/form2.tsx'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <Title/>
+        <Intro firstName="Nathaniel Powers" secondName="Dominic DiPofi"/>
+        <div>
+            <Hobby1 name="Nathaniel Powers"/>
+            <List1/>
+            <Table1/>
+            <Form1/>
+        </div>
+
+        <div>
+            <Hobby2 name="Dominic DiPofi"/>
+            <List2/>
+            <Table2/>
+            <Form2/>
+        </div>
     </>
   )
 }
