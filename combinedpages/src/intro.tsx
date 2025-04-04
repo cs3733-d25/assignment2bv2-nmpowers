@@ -4,7 +4,7 @@ function Intro (props){
     return(
         <>
         <p>
-            Hello! We are group 30, which includes {props.firstName} and {props.secondName}, and our favorite hobbies are poetry and !
+            Hello! We are group 30, which includes {props.firstName} and {props.secondName}, and our favorite hobbies are poetry and offroading!
 
             <br /><br />
 
@@ -13,7 +13,7 @@ function Intro (props){
 
             <br /><br />
 
-            {props.secondName} is [insert intro paragraph here]
+            {props.secondName} is a second-year Robotics Engineering Major at WPI, hailing from the great city of Pittsburgh, Pennsylvania. On campus, {props.secondName} is a proud member of the WPI Motorsports club, and off campus, enjoys taking long drives around New England and enjoying the local scenery. Being on campus limits the ability to get off the roads, but at home, {props.secondName} loves to let it all loose in the woods.
         </p>
         </>
     )

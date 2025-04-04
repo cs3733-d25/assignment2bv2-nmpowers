@@ -25,7 +25,7 @@ function App() {
         </div>
 
         <div>
-            <Hobby2 name="Dominic DiPofi"/>
+            <Hobby2 othername="Dominic DiPofi"/>
             <List2/>
             <Table2/>
             <Form2/>
